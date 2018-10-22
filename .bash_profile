@@ -21,16 +21,10 @@ alias kill-all="pkill -f node"
 alias prettify="yarn prettier --write "
 alias prettiy-all="yarn prettier --write \"src/**/*.js\""
 
+alias prune="git remote prune origin"
+alias clean-branches="git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d"
 
-
-# Git aliases
-
-alias checkout="git checkout"
-alias fetch="git fetch"
-alias pull="git pull"
-alias commit="git commit -m"
-alias -b="git checkout -b"
-
+alias prune-and-clean-branches="git remote prune origin && git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d"
 
 
 # Path aliases
@@ -45,3 +39,5 @@ alias apollo-backend="cd ~/Documents/web/apollo-haendlerportal-backend"
 alias coba-styleguide="cd ~/Documents/web/coba-styleguide"
 alias usage-mock="cd ~/Documents/web/coba-styleguide-usage-mock"
 alias lsg-comp="cd ~/Documents/web/lsg.components"
+alias web="cd ~/Documents/web/"
+alias icon-portal="cd ~/Documents/web/neugelb-icon-portal"
