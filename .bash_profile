@@ -1,13 +1,12 @@
-# Needed for nvm
+#Needed for nvm
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 
 #auto completion for git
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
-fi
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
 
 #=========================================
 
@@ -18,6 +17,7 @@ alias ..="cd .."
 alias ll="ls -ali"
 alias kill-all="pkill -f node"
 
+alias 2="git branch"
 alias prettify="yarn prettier --write "
 alias prettiy-all="yarn prettier --write \"src/**/*.js\""
 
@@ -40,4 +40,21 @@ alias coba-styleguide="cd ~/Documents/web/coba-styleguide"
 alias usage-mock="cd ~/Documents/web/coba-styleguide-usage-mock"
 alias lsg-comp="cd ~/Documents/web/lsg.components"
 alias web="cd ~/Documents/web/"
-alias icon-portal="cd ~/Documents/web/neugelb-icon-portal"
+alias ipfe="cd ~/Documents/web/neugelb-icon-portal"
+alias ipbe="cd ~/Documents/web/neugelb-icon-portal-be"
+alias dropout="cd ~/Documents/web/dropout-films"
+
+
+# Git aliases
+alias 1="git status"
+alias 2="git branch"
+alias 3="git fetch"
+alias 4="git pull"
+alias 5="git push"
+alias 6="git checkout development"
+
+# More aliases
+alias 7="yarn"
+alias 8="yarn start"
+
+
