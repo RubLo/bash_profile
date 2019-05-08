@@ -1,3 +1,6 @@
+# Set Git language to English
+alias git='LC_ALL=en_US git'
+
 #Needed for nvm
 
 export NVM_DIR="$HOME/.nvm"
@@ -56,5 +59,3 @@ alias 6="git checkout development"
 # More aliases
 alias 7="yarn"
 alias 8="yarn start"
-
-
